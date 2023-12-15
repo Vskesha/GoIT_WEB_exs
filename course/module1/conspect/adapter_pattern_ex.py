@@ -43,7 +43,7 @@ def pretty_view(data: list[dict[str, dict[str, str]]]):
 if __name__ == '__main__':
     api_client = ApiClient(RequestConnection(requests))
 
-    data_from_pb_site = api_client.get_data('https://api.privatbank.ua/p24api/pubinfo?exchange&coursid=11')
+    data_from_pb_site = api_client.get_data('https://api.privatbank.ua/p24api/pubinfo?exchange&coursid=12')
     print(data_from_pb_site)
     print()
     adapted_data = data_adapter(data_from_pb_site)
@@ -51,7 +51,8 @@ if __name__ == '__main__':
     print()
     pretty_view(adapted_data)
 
-# [{'ccy': 'EUR', 'base_ccy': 'UAH', 'buy': '38.90000', 'sale': '40.48583'}, {'ccy': 'USD', 'base_ccy': 'UAH', 'buy': '36.56860', 'sale': '37.45318'}]
+# [{'ccy': 'EUR', 'base_ccy': 'UAH', 'buy': '38.90000', 'sale': '40.48583'},
+# {'ccy': 'USD', 'base_ccy': 'UAH', 'buy': '36.56860', 'sale': '37.45318'}]
 #
 # [{'EUR': {'buy': '38.90000', 'sale': '40.48583'}}, {'USD': {'buy': '36.56860', 'sale': '37.45318'}}]
 #
