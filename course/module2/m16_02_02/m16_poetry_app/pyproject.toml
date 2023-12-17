@@ -1,14 +1,14 @@
 [tool.poetry]
 name = "m16-poetry-app"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
-authors = ["Yuriy Kuchma <krabatua@gmail.com>"]
+authors = ["Vasyl Boliukh <vskesha@gmail.com>"]
 readme = "README.md"
-#packages = [{include = "m16_poetry_app"}]
+# packages = [{include = "m16-poetry-app"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-flask = "^2.3.3"
+flask = "^3.0.0"
 
 
 [build-system]
