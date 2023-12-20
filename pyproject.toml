@@ -1,14 +1,13 @@
 [tool.poetry]
 name = "goit-web-exs"
 version = "0.1.0"
-description = "Trying poetry. Project for learning Python web developing"
-authors = ["Vskesha <vskesha@gmail.com>"]
-license = "MIT"
+description = ""
+authors = ["Vasyl Boliukh <89039235+Vskesha@users.noreply.github.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.11"
-requests = "^2.31.0"
+python = "^3.11"
+jinja2 = "^3.1.2"
 
 
 [build-system]
