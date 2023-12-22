@@ -10,14 +10,14 @@ def run_server(ip, port):
     def handle(sock: socket, address: str):
         print(f'Connection established {address}')
         while True:
-            received, address = sock.recvfrom(1024)
+            received = sock.recv(1024)
             if not received:
                 break
             data = received.decode('utf-8')
             print(f'Received data: {data}')
             sock.send(received)
-            print(f'Socket connection closed {address}')
-            sock.close()
+        print(f'Socket connection closed {address}')
+        sock.close()
 
 
     server_socket = socket(AF_INET, SOCK_STREAM)

@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Перша стаття",
+    "date": "12.10.2023",
+    "author": "Dmitro",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid"
+  },
+  {
+    "title": "Про корисність пива",
+    "date": "11.10.2023",
+    "author": "Andriy",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid"
+  },
+  {
+    "title": "Чому програмування це зло",
+    "date": "10.10.2023",
+    "author": "Eduardo",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid"
+  },
+  {
+    "title": "Куди втікають птахи",
+    "date": "09.10.2023",
+    "author": "Serhiy",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid"
+  },
+  {
+    "title": "Хто вкрав камаз?",
+    "date": "05.10.2023",
+    "author": "Ruslan",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid"
+  },
+  {
+    "title": "Остання стаття",
+    "date": "01.10.2023",
+    "author": "Vasyl",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid"
+  }
+]
