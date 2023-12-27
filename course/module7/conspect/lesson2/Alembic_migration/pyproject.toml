@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "goit-web-exs"
+name = "alembic-migration"
 version = "0.1.0"
 description = ""
 authors = ["Vasyl Boliukh <89039235+Vskesha@users.noreply.github.com>"]
@@ -7,16 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-jinja2 = "^3.1.2"
-requests = "^2.31.0"
-aiofile = "^3.8.8"
-aiopath = "0.6.11"
-aioshutil = "^1.3"
-aiohttp = "^3.9.1"
-websockets = "^12.0"
-names = "^0.3.0"
-faker = "^21.0.0"
-httpx = "^0.26.0"
+alembic = "^1.13.1"
 sqlalchemy = "^2.0.23"
 
 
