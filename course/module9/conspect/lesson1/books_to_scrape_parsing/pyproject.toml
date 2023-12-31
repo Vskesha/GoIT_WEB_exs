@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "books-to-scrape-parsing"
+version = "0.1.0"
+description = ""
+authors = ["Vasyl Boliukh <89039235+Vskesha@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+beautifulsoup4 = "^4.12.2"
+requests = "^2.31.0"
+sqlalchemy = "^2.0.24"
+black = "^23.12.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
