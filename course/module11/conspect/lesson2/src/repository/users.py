@@ -26,3 +26,9 @@ async def create_user(body: UserModel, db: Session) -> User:
 async def update_token(user: User, token: str | None, db: Session) -> None:
     user.refresh_token = token
     db.commit()
+
+
+async def confirmed_email(email: str, db: Session) -> None:
+    user = await get_user_by_email(email, db)
+    user.confirmed = True
+    db.commit()
