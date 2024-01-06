@@ -11,12 +11,12 @@ class EmailSchema(BaseModel):
 
 
 conf = ConnectionConfig(
-    MAIL_USERNAME="vskeshavs@meta.ua",
-    MAIL_PASSWORD="Vskesha_1980",
-    MAIL_FROM="vskeshavs@meta.ua",
+    MAIL_USERNAME="******@meta.ua",
+    MAIL_PASSWORD="**********",
+    MAIL_FROM="********@meta.ua",
     MAIL_PORT=465,
     MAIL_SERVER="smtp.meta.ua",
-    MAIL_FROM_NAME="Vasya Boliukh",
+    MAIL_FROM_NAME="***********",
     MAIL_STARTTLS=False,
     MAIL_SSL_TLS=True,
     USE_CREDENTIALS=True,
@@ -30,7 +30,7 @@ app = FastAPI()
 @app.post("/send-email")
 async def send_in_background(background_tasks: BackgroundTasks, body: EmailSchema):
     message = MessageSchema(
-        subject="Fastapi mail module from Vasyl Boliukh",
+        subject="Fastapi mail module",
         recipients=[body.email],
         template_body={"fullname": "Katya"},
         subtype=MessageType.html
