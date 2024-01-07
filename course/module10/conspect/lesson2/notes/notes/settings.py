@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-2&%_tv9i^s^jsygx!79n%dl!xf6151h#n&1sx19+a)p=9zn^$#'
+SECRET_KEY = '**********'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'notes.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': '567234',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'NAME': '******',
+        'USER': '******',
+        'PASSWORD': '******',
+        'HOST': '******',
+        'PORT': '******',
     }
 }
 
@@ -128,3 +128,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = '******'
+EMAIL_PORT = '******'
+EMAIL_STARTTLS = False
+EMAIL_USE_SSL = True
+EMAIL_USE_TLS = False
+EMAIL_HOST_USER = '*****@meta.ua'
+EMAIL_HOST_PASSWORD = '*******'
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
